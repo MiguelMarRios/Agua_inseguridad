@@ -8,8 +8,9 @@ from supabase import create_client, Client # NUEVO
 # INICIALIZAR BASE DE DATOS SEGURA EN LA NUBE
 @st.cache_resource
 def init_connection():
-    url = st.secrets["https://hkvtenokvgsffpnnjswj.supabase.co/rest/v1/"]
-    key = st.secrets["sb_publishable_5pphp1U-D50b8EOCzzBNOw__-gvdMag"]
+    # Así se llama a la bóveda secreta, usando nombres genéricos, no la contraseña real
+    url = st.secrets["SUPABASE_URL"]
+    key = st.secrets["SUPABASE_KEY"]
     return create_client(url, key)
 
 supabase = init_connection()
