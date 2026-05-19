@@ -166,7 +166,7 @@ if 'db_ciudadana' not in st.session_state:
 # --- BARRA LATERAL ---
 with st.sidebar:
     st.header("💧 Monitor de Hogar (HWISE)")
-    st.write("Ingresa los datos socioambientales de tu vivienda.")
+    st.write("Ingresa los datos de tu vivienda.")
     
     estado_sel = st.selectbox("Estado de residencia:", list(ESTADOS_MEXICO.keys()))
     
