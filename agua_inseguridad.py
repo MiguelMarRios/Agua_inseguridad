@@ -22,7 +22,7 @@ st.set_page_config(page_title="Monitor HWISE México", page_icon="💧", layout=
 st.markdown("""
     <style>
     /* Fondo general del mapa y la app */
-    .stApp { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: #f8fafc; }
+    .stApp { background: linear-gradient(135deg, #0f172a, #35c5e5); color: #f8fafc; }
     
     /* === BARRA LATERAL === */
     section[data-testid="stSidebar"] { background-color: #020617 !important; border-right: 1px solid #3b82f6; }
